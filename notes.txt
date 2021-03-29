@@ -1,0 +1,21 @@
+                                            chap 1
+images are array of boxes , in those array the color can be added by changing the value in the boxes , 
+in gray scale these boxes can be filled witheither white 1 or 0 black, these array are termed as pixels,
+vga=640x480 (width x height), HD= 1280 x 1080, FHD=1920x1080 , 4k=3840x2160
+
+A black and white image is called binary image, so we use an 2^8=256 value to make this an analog structure,
+for color we have RGB (0,0,0) to (255,255,255) so a color vga image is 640 x 480x 3,
+
+after installation we'll get the opencv package, and start our project, disable pylance from ctrl+shift+p
+if import error exists,  to read image use imread in a variable, and to show its imshow with waitkey(0)
+where 0 is infinte while 1s == 1000 and so on 
+
+for video its VideoCapture() and has a boolean confirmation at imshow, set (3) for height, set(4) for width
+and set(10) for brightness, for mirror issue use cv.flip(img,1),1 for horizontle flip and 0 for vertical flip
+
+                                    chap 2
+to convert to grayscale , cvtcolor(img,BGR2GRAY) method is used in BGR2GRAY
+to blur it, cv.GaussianBlur(img,(ksize),sigmaX) 
+
+Edge detector , we will use cv.Canny(img,100,100) where 100 and 100 are Edge intensity and linkages, these
+can be diffrent as per need,  
