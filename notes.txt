@@ -18,4 +18,9 @@ to convert to grayscale , cvtcolor(img,BGR2GRAY) method is used in BGR2GRAY
 to blur it, cv.GaussianBlur(img,(ksize),sigmaX) 
 
 Edge detector , we will use cv.Canny(img,100,100) where 100 and 100 are Edge intensity and linkages, these
-can be diffrent as per need,  
+can be diffrent as per need,with canny we get dilation and errosion filters as well 
+
+                                    chap 3 
+in open cv the x is horizontle as normaal convention while y axis is vertical down so is 
+opposite to normal vertical upper , we can use shape attribute to find the images shape 
+we have list slicing as cropping, 
