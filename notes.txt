@@ -24,3 +24,12 @@ can be diffrent as per need,with canny we get dilation and errosion filters as w
 in open cv the x is horizontle as normaal convention while y axis is vertical down so is 
 opposite to normal vertical upper , we can use shape attribute to find the images shape 
 we have list slicing as cropping, 
+
+                                    chap 4
+shapes and text on images, we'll use np.zeros for a canvas,
+we can use the complete color segment by slicing as img[:]=255,0,0 technique
+and if parameters are unknown for ending coordinates of a shape we can use img.shape[1] and img.shape[2]
+cv.FILLED for filling the shape will complete cover, 
+
+
+                                    chap 5
